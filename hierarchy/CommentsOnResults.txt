@@ -1,0 +1,22 @@
+Machine(s) used for the Memory metrics - Winsconsin Cluster - 2 nodes of c220g5
+
+(1)Latency:
+Local DRAM is fastest, typical for memory directly connected to the processor.
+Local disk is slower, as accessing data from disk takes more time.
+Remote memory over the network has the slowest latency due to network communication overhead.
+
+(2)Bandwidth (BW):
+Local DRAM has the highest data transfer rate, making it great for quick data access.
+Local disk has slower data transfer compared to DRAM but offers a larger storage space.
+Remote memory surprisingly shows good bandwidth(1000MB/s bottleneck, meaning no dropped packets until that value of transfer rate), indicating efficient network usage.
+
+(3)Capacity:
+Local disk offers the most storage space.
+Local DRAM  has moderate capacity but very large if compared to commercial devices.
+Remote memory capacity cannot be measured.
+
+Key Points(Overall):
+Different memory types have trade-offs in speed and storage capacity.
+Local DRAM is fastest but may have limited space.
+Local disk provides very large amount of storage but is slower.
+Remote memory, despite network access, shows promising bandwidth.
